@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorMenu">#a21c26</color>
+    <!---<color name="background">#ececec</color> -->
+    <drawable name="highlight_pressed">#98dff3</drawable>
+    <drawable name="highlight_focused">#b9e6f3</drawable>
+</resources>

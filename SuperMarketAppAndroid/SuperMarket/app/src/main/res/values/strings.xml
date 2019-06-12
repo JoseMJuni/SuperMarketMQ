@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SuperMarket</string>
+    <string name="title_listsucripcion_list">ListsSucripciones</string>
+    <string name="title_listsucripcion_detail">ListSucripcion Detail</string>
+    <string name="title_activity_canales">CanalesActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="notif_content_result">Tienes mensajes nuevos %1$d</string>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/menu"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/suscripcionText2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/black"
+                android:elevation="4dp"
+                android:text=" Ajustes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ofertasText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Suscripciones"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="0dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:theme="@style/Base.CardView"
+
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/susOfertaCine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="Cine"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/susOfertaReposteria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="Reposteria"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/susOfertaCarnes"
+                        android:layout_width="208dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="Charcuteria"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/susOfertaPesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="Pescadería"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/susOfertaProductos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="Productos Hogar"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/susOfertaFruteria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="Fruteria"
+                        android:textSize="15dp" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonMail"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:onClick="onClickedMessage"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/iconomensaje" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonMain"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:onClick="onClickedMain"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/iconomain" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonSetting"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:onClick="onClickedSetting"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/iconosetting2"
+                 />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

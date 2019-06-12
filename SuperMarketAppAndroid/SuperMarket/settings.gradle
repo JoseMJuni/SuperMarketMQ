@@ -1,0 +1,1 @@
+include ':app', ':amqp-client-4.2.2'

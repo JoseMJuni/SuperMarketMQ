@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.RabbitMQ.interfaz.ControladorSend">
+   <children>
+      <HBox prefHeight="7.0" prefWidth="298.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSend" text="Enviar" />
+            <Button mnemonicParsing="false" onAction="#handlClose" text="Cerrar" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <TextArea fx:id="textoMensaje" prefHeight="102.0" prefWidth="278.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <ComboBox fx:id="menu" onAction="#handleMenu" prefWidth="150.0" promptText="Canal" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CanalesActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/layaout_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/menu"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="-10dp"
+            android:cacheColorHint="@android:color/transparent"
+
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/tituloChat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/black"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:text=" Canales"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonMail"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:onClick="onClickedMessage"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/iconomensaje" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonMain"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:onClick="onClickedMain"
+                android:scaleType="centerInside"
+
+
+                app:srcCompat="@drawable/iconomain" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonSetting"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:onClick="onClickedSetting"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/iconosetting2" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
